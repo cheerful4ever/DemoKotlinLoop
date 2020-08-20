@@ -20,5 +20,13 @@ class MainActivity : AppCompatActivity() {
                 i++
             }
         }
+
+        button2.setOnClickListener{
+            val word = editText.text.toString()
+
+            for (letter in word) {
+                Log.d("MainActivity", "$letter")
+            }
+        }
     }
 }
